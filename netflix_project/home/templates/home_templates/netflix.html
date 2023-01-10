@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'home_static/css/netflix.css' %}">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="topleft">
+            <img class="img" src="{% static 'home_static/images/Netflix-logo-red-black-png-768x436.png' %}" alt="">
+        </div>
+
+        <div class="options">
+            <a href="">Home</a>
+            <a href="">TV Shows</a>
+            <a href="">Movies</a>
+        </div>
+
+        <div class="topright">
+            <i style="font-size:24px" class="fa fa-search"></i>
+            <i style="font-size:24px" class="fa">&#xf0f3;</i>
+            <a href="{% url 'signin:signin_page' %}"><i style="font-size:24px" class="fa">&#xf2be;</i></a>
+        </div>
+    </div>
+
+    <div style="background-image: url('{% static 'home_static/images/the circle.png' %}');" class="backgroundimg">
+        <div class="titles">
+            <br><br><br>
+            <h4>New Episodes coming on Wednesday<h4>
+            <p>status and strategy collide in this social experiment and competition show where online players
+                        flirt,befriend</p>
+            <div class="buttons">
+                <input class="play" type="button" value="Play">
+                <input class="moreinfo" type="button" value="More Info">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <h3>Popular on Netflix</h3>
+    <div class="row1">
+        <div class="1"><img style="width:100%;" src="{% static 'home_static/images/wednesday-netflix-review.jpg' %}" alt=""></div>
+        <div class="2"><img style="width:100%;" src="{% static 'home_static/images/friends.jpg' %}" alt=""></div>
+        <div class="3"><img style="width:100%;" src="{% static 'home_static/images/moneyhiest.jpg' %}" alt=""></div>
+    </div>
+
+    <h3>Trending Now</h3>
+    <div class="row1">
+        <div class="1"><img style="width:100%;" src="{% static 'home_static/images/mismatch.jpg' %}" alt=""></div>
+        <div class="2"><img style="width:100%;" src="{% static 'home_static/images/squidgame.jpg' %}" alt=""></div>
+        <div class="3"><img style="width:100%;" src="{% static 'home_static/images/strangerthings.jpg' %}" alt=""></div>
+    </div>
+
+    <h3>Movies set in India</h3>
+    <div class="row1">
+        <div class="1"><img style="width:100%;" src="{% static 'home_static/images/gattakusthi.jpg' %}" alt=""></div>
+        <div class="1"><img style="width:100%;" src="{% static 'home_static/images/gattakusthi.jpg' %}" alt=""></div>
+        <!-- <div class="1"><img style="width:100%;" src="{% static 'home_static/images/gattakusthi.jpg' %}" alt=""></div> -->
+
+        <!-- <div class="2"><img style="width:100%;" src="{% static 'home_static/images/major.jpg' %}" alt=""></div> -->
+        <div class="3"><img style="width:110%;" src="{% static 'home_static/images/gunjan.jpg' %}" alt=""></div>
+    </div>
+
+
+
+</body>
+
+</html>

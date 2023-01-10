@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.navbar{
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    top: 0;
+    position: sticky;
+}
+
+.topleft {
+    color: white;
+}
+
+.options{
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
+.options a{
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.img{
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+}
+
+
+
+.topright{
+    color: white;
+    padding: 25px;
+    padding-right: 5px;
+    width: 75%;
+    text-align: right;
+}
+
+.topright i{
+    padding: 10px;
+}
+
+.select{
+    border: 0px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.backgroundimg {
+    width: 1000%;
+    display: grid;
+    grid-template-columns:auto;
+    
+}
+
+.titles{
+    color:white;
+    background-image: url("static/images/the circle.png");
+
+}
+
+.titles h4{
+    font-size: 15px;
+    padding-left: 10px;
+    color: white;
+}
+
+.titles p{
+    width: 150px;
+    font-size: 10px;
+}
+
+.buttons input{
+    color: white;
+    background-color: black;
+    border: 0px solid white;
+}
+
+h3{
+    margin: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+.row1{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2px;
+    grid-gap: 5px;
+}
+
+.row1 img{
+    padding: 2px;
+}
