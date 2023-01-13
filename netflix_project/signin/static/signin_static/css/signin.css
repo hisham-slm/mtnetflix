@@ -3,18 +3,29 @@
 body{
     padding: 0;
     margin: 0;
+    
+}
+.logo{
+    display: flex;
+    justify-self: left;
+
 }
 
 .logo img{
-    width: 200px;
+    width: 100px;
+}
+
+.form_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .forms{
-    width: 50%;
+    
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.809);
-    margin: 350px;
-    margin-top: 100px;
+    
 }
 
 
@@ -25,7 +36,7 @@ body{
 
 .inputs{
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
     justify-content: center;
 }
 
@@ -38,6 +49,7 @@ body{
     border: 0px solid black;
     font-family: 'Poppins', sans-serif;
     color: black;
+    border-radius: 10px;
 
 
 }
@@ -45,17 +57,26 @@ body{
 .btn input{
     color: white;
     background-color: rgb(173, 8, 8);
-    width: 85%;
+    width: 87%;
 
 }
 
 .signup{
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
 
 
 }
 .signup a{
     color: white;
+    margin: 20px;
+    text-align: left;
+    padding-left: 0px;
+}
+.signup p{
+    text-align: center;
+    margin: 20px;
+
 }

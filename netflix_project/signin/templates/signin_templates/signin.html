@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing In</title>
-    <link rel="stylesheet" href="{% static 'signin_static/css/signin.css' %}">
+    <link rel="stylesheet" href="{% static 'signin_static\css\signin.css' %}">
 </head>
 
 <body style="background-image: url( '{% static 'signin_static/images/grid.jpg' %}' );">
@@ -16,21 +16,23 @@
         <img class="img" src="{% static 'signin_static\images\logo.png' %}" alt="">
     </div>
 
-    <div class="forms">
-        <div class="header">
-            <h1>Sign In</h1>
-        </div>
-        <div class="inputs">
-            <input type="text" placeholder="Email or phone number">
-            <input type="password" placeholder="Password">
-            <div class="btn">
-                <input type="button" value="Sign Up">
+    <div class="form_box">
+        <div class="forms">
+            <div class="header">
+                <h1>Sign In</h1>
             </div>
-            <div class="signup">
-                <p>New to netflix?</p>
-                <a href="">Sign up now</a>
+            <div class="inputs">
+                <input type="text" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+                <div class="btn">
+                    <input type="button" value="Sign In">
+                </div>
+                <div class="signup">
+                    <p>New to netflix?</p>
+                    <a href="{% url 'signin:signup_page' %}">Sign up now</a>
+                </div>
             </div>
-        </div>
+    </div>
     </div>
 </body>
 

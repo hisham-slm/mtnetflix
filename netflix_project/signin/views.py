@@ -4,3 +4,7 @@ from django.shortcuts import render
 
 def signin(request):
     return render(request,'signin_templates/signin.html')
+
+
+def signup(request):
+    return render(request,'signin_templates/signup_page.html')

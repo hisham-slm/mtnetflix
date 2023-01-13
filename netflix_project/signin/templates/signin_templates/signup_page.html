@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'signin_static\css\signup.css' %}">
+</head>
+
+<body style="background-image: url( '{% static 'signin_static/images/grid.jpg' %}' );">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rubik+80s+Fade&display=swap');
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .background{
+            background-color: rgba(0, 0, 0, 0.603);
+            height: 100%;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+        .content_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 390px;
+
+        }
+
+        .contents {
+            font-size: x-large;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        .forms{
+            /* display: grid;
+            grid-template-columns: auto; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .forms input{
+            width: 500px;
+            height: 50px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            margin: 20px;
+        }
+        .button{
+            width: 100px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 400px;
+
+        }
+
+        .btn{
+            background-color: rgb(191, 15, 15);
+            font-family: 'Poppins', sans-serif;
+            width: 110px;
+            text-decoration: none;
+            border: none;
+            height: 50px;
+            padding: 10px;
+            
+        }
+    </style>
+
+
+    <div class="background">
+        <div class="logo">
+            <img class="img" src="{% static 'signin_static\images\logo.png' %}" alt="">
+        </div>
+        <div class="content_box">
+            <div class="contents">
+                <h1>
+                    Unlimited movies, TV shows and more.
+                </h1>
+                <h3>
+                    Watch anywhere. Cancel anytime.
+                </h3>
+                <h5>
+                    Ready to watch? Enter your email to create or restart your membership
+                </h5>
+               <div class="forms">
+                <input type="email" placeholder="Email address">
+               </div>
+               <div class="button">
+                <button class="btn">Get Started > </button>
+               </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

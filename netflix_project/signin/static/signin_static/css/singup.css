@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rubik+80s+Fade&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo img{
+    border: 20px white solid;
+}
+
+.contents h1{
+    font-family: 'Poppins', sans-serif;
+
+}
